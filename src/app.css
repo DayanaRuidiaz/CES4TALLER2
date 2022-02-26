@@ -1,0 +1,242 @@
+.app {
+  height: 100vh;
+  display: flex;
+  color: black;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.main {
+  width: 75%;
+  display: flex;
+  flex-direction: column; 
+}
+.MuiToolbar-regular{
+background-color: #47acff;
+}
+.logo{
+  margin-right: 10px;
+}
+.makeStyles-paper-38{
+  border-radius: 0px !important;
+  background-color: white;
+}
+form{
+width: 600px;
+background-color: white;
+}
+.MuiContainer-maxWidthLg{
+background-color: white;
+}
+
+button.boton-salir {
+  
+  color: black;
+  border: none;
+  font-size: 29px;
+  padding: 4px 29px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+.pyramid {
+  width: 25%;
+  background-color: #47acff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid white;
+}
+
+.moneyList {
+  padding: 20px;
+  list-style: none;
+  width: 90%;
+}
+
+ .moneyListItem {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+
+ }
+
+ .moneyListItem.active {
+  color: white;
+} 
+.moneyListItemNumber {
+  width: 25%;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.moneyListItemAmount {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.top {
+  height: 37%;
+  position: relative;
+}
+.bottom {
+  height: 50%;
+}
+.timer {
+  width: 70px;
+  height: 70px;
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  font-size: 30px;
+  font-weight: 700;
+}
+.trivia {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.question {
+  width: 80.1%;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid 49280E;
+  font-size: 20px;
+  position: relative;
+  bottom: 30px;
+}
+
+.answers {
+    margin-top: -110px;
+    margin: 1;
+    width: 80.5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    padding: 60px;
+
+}
+
+.answer {
+  width: 40%;
+  padding: 10px;
+  margin: 0 10px 20px 10px;
+  text-align: center;
+  border: 1px solid rgb(139, 198, 238);
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.answer:hover,
+.answer.active {
+
+  color: black;
+}
+
+.answer.correct {
+  animation: correct 5s ease forwards;
+}
+.answer.wrong {
+  animation: wrong 5s ease forwards;
+}
+
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: rgb(96, 153, 10);
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(rgb(96, 153, 10), rgb(96, 153, 10));
+  }
+  62%,
+  100% {
+    background: rgb(96, 153, 10);
+  }
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: red;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(red, red);
+  }
+  62%,
+  100% {
+    background: red;
+  }
+}
+
+
+
+.endText {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.start {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.startInput {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.startInput:focus {
+  outline: none;
+}
+
+.startButton {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+} 
+
+.MuiButton-containedPrimary {
+  color: #fff !important;
+  background-color: #47acff !important;
+}
